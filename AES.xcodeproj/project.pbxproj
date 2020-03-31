@@ -16,6 +16,8 @@
 		25677CE424332679001C747D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25677CE324332679001C747D /* main.m */; };
 		25677CEE2433267A001C747D /* AESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25677CED2433267A001C747D /* AESTests.m */; };
 		25677CF92433267A001C747D /* AESUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25677CF82433267A001C747D /* AESUITests.m */; };
+		25677D092433327F001C747D /* NSString+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 25677D082433327F001C747D /* NSString+Tool.m */; };
+		25677D0C2433328A001C747D /* NSData+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 25677D0B2433328A001C747D /* NSData+Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		25677CF42433267A001C747D /* AESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25677CF82433267A001C747D /* AESUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESUITests.m; sourceTree = "<group>"; };
 		25677CFA2433267A001C747D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25677D072433327F001C747D /* NSString+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tool.h"; sourceTree = "<group>"; };
+		25677D082433327F001C747D /* NSString+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tool.m"; sourceTree = "<group>"; };
+		25677D0A2433328A001C747D /* NSData+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Tool.h"; sourceTree = "<group>"; };
+		25677D0B2433328A001C747D /* NSData+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Tool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		25677CD024332676001C747D /* AES */ = {
 			isa = PBXGroup;
 			children = (
+				25677D0624333244001C747D /* Category */,
 				25677CD124332676001C747D /* AppDelegate.h */,
 				25677CD224332676001C747D /* AppDelegate.m */,
 				25677CD424332676001C747D /* SceneDelegate.h */,
@@ -135,6 +142,17 @@
 				25677CFA2433267A001C747D /* Info.plist */,
 			);
 			path = AESUITests;
+			sourceTree = "<group>";
+		};
+		25677D0624333244001C747D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				25677D072433327F001C747D /* NSString+Tool.h */,
+				25677D082433327F001C747D /* NSString+Tool.m */,
+				25677D0A2433328A001C747D /* NSData+Tool.h */,
+				25677D0B2433328A001C747D /* NSData+Tool.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25677CD924332676001C747D /* ViewController.m in Sources */,
+				25677D092433327F001C747D /* NSString+Tool.m in Sources */,
 				25677CD324332676001C747D /* AppDelegate.m in Sources */,
 				25677CE424332679001C747D /* main.m in Sources */,
+				25677D0C2433328A001C747D /* NSData+Tool.m in Sources */,
 				25677CD624332676001C747D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
